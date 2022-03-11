@@ -9,3 +9,4 @@ if __name__ == '__main__':
     img[25:215, 75:245] = mosaic
     cv2.imshow("Mosaicked", img)
     ret_value = cv2.waitKey(0)
+    cv2.destroyAllWindows()
