@@ -10,11 +10,11 @@ def drawing(event, x, y, radius, color):
         elif event == cv2.EVENT_RBUTTONDOWN:
             cv2.circle(background, (x, y), radius, color, 3)
         elif event == cv2.EVENT_LBUTTONDOWN:
-            if key == 99:
+            if key == 99:       # key 'c'
                 cv2.rectangle(background, (x - radius, y - radius), (x + radius, y + radius), color, -1)
-            elif key == 114:
+            elif key == 114:    # key 'r'
                 cv2.rectangle(background, (x - radius, y - radius), (x + radius, y + radius), color, 3)
-            elif key == 108:
+            elif key == 108:    # key 'l'
                 cv2.line(background, (x, y - radius), (x, y + radius), color, 3)
 
 
