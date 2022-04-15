@@ -5,7 +5,7 @@ import time
 
 
 if __name__ == '__main__':
-    cv2.namedWindow('snakeline')
+    cv2.namedWindow('snakeline D1090481')
     score = 0
     flag = 1
 
