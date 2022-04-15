@@ -16,7 +16,7 @@ if __name__ == '__main__':
             color = np.random.randint(0, 256, size=3).tolist()
 
             circle_draw(bg, (cx, cy), r, color)
-            cv2.imshow('LCD Protection', bg)
+            cv2.imshow('LCD Protection D1090481', bg)
             time.sleep(0.1)
 
     cv2.destroyAllWindows()
