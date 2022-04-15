@@ -20,12 +20,12 @@ def drawing(event, x, y, radius, color):
 
 
 def onMouse(event, x, y, flags, param):
-    b = cv2.getTrackbarPos('Blue', 'Drawing')
-    g = cv2.getTrackbarPos('Green', 'Drawing')
-    r = cv2.getTrackbarPos('Red', 'Drawing')
+    b = cv2.getTrackbarPos('Blue', 'Drawing D1090481')
+    g = cv2.getTrackbarPos('Green', 'Drawing D1090481')
+    r = cv2.getTrackbarPos('Red', 'Drawing D1090481')
     
-    switch = cv2.getTrackbarPos('Colored', 'Drawing')
-    radius = cv2.getTrackbarPos('radius', 'Drawing') + 4
+    switch = cv2.getTrackbarPos('Colored', 'Drawing D1090481')
+    radius = cv2.getTrackbarPos('radius', 'Drawing D1090481') + 4
     if switch == 0:
         drawing(event, x, y, radius, 0)
     else:
@@ -34,17 +34,17 @@ def onMouse(event, x, y, flags, param):
 
 if __name__ == '__main__':
     background = np.ones((400, 500, 3), np.uint8) * 255
-    cv2.namedWindow('Drawing')
+    cv2.namedWindow('Drawing D1090481')
     
-    cv2.createTrackbar('Red', 'Drawing', 0, 255, onTrackbarChange)
-    cv2.createTrackbar('Green', 'Drawing', 0, 255, onTrackbarChange)
-    cv2.createTrackbar('Blue', 'Drawing', 0, 255, onTrackbarChange)
-    cv2.createTrackbar('radius', 'Drawing', 0, 56, onTrackbarChange)
-    cv2.createTrackbar('Colored', 'Drawing', 0, 1, onTrackbarChange)
-    cv2.setMouseCallback('Drawing', onMouse)
+    cv2.createTrackbar('Red', 'Drawing D1090481', 0, 255, onTrackbarChange)
+    cv2.createTrackbar('Green', 'Drawing D1090481', 0, 255, onTrackbarChange)
+    cv2.createTrackbar('Blue', 'Drawing D1090481', 0, 255, onTrackbarChange)
+    cv2.createTrackbar('radius', 'Drawing D1090481', 0, 56, onTrackbarChange)
+    cv2.createTrackbar('Colored', 'Drawing D1090481', 0, 1, onTrackbarChange)
+    cv2.setMouseCallback('Drawing D1090481', onMouse)
 
     while True:
-        cv2.imshow('Drawing', background)
+        cv2.imshow('Drawing D1090481', background)
 
         key = cv2.waitKey(100)
         if key == ord('q') or key == ord('Q'):
